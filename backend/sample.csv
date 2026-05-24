@@ -1,0 +1,4 @@
+source_type,category,date,value,unit
+SAP,Fuel,2026-05-24,450,liters
+UTILITY,Electricity,2026-05-24,1200,kwh
+TRAVEL,Flight,2026-05-24,560,km
