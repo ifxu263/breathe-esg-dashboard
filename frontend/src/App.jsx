@@ -10,7 +10,7 @@ function App() {
   const fetchRecords = () => {
 
     axios
-      .get("http://127.0.0.1:8000/api/records/")
+      .get("https://breathe-esg-dashboard.onrender.com/api/records/")
       .then((response) => {
         setRecords(response.data);
       })
@@ -39,7 +39,7 @@ function App() {
     try {
 
       await axios.post(
-        "http://127.0.0.1:8000/api/upload/",
+        "https://breathe-esg-dashboard.onrender.com/api/upload/",
         formData
       );
 
@@ -58,7 +58,7 @@ function App() {
     try {
 
       await axios.patch(
-        `http://127.0.0.1:8000/api/records/${id}/status/`,
+        `https://breathe-esg-dashboard.onrender.com/api/records/${id}/status/`,
         {
           status: status
         }
